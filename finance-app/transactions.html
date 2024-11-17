@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transactions - Finance Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Transactions</h1>
+    <button id="logout">Logout</button>
+  </header>
+
+  <main>
+    <div class="transaction-summary">
+      <h2>Transaction Summary</h2>
+      <div id="categorySummary"></div>
+      <div id="totalSpent"></div>
+    </div>
+
+    <div class="filter-section">
+      <h3>Filter Transactions</h3>
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="food">Food</option>
+        <option value="transport">Transport</option>
+        <option value="entertainment">Entertainment</option>
+        <!-- Add more categories as needed -->
+      </select>
+    </div>
+
+    <ul id="transactionsList"></ul>
+
+    <form id="transactionForm">
+      <input type="text" id="description" placeholder="Description" required>
+      <input type="number" id="amount" placeholder="Amount" required>
+      <input type="text" id="category" placeholder="Category" required>
+      <button type="submit">Add Transaction</button>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
